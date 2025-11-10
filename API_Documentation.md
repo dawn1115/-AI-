@@ -128,7 +128,7 @@ GM_xmlhttpRequest({
 }
 ```
 
-### 2. AI 辅助功能 API (星火大模型集成)
+### 2. AI 辅助功能 API 
 
 #### 2.1 AI 题目分析
 
@@ -261,14 +261,14 @@ async function analyzeQuestion(question, apiKey) {
 
 ### 版本历史
 
-- v0.2.0: 集成星火大模型 X1 API，新增 AI 辅助功能
+- v0.2.0: 集成大模型  API，新增 AI 辅助功能
 - v0.1.0: 初始版本，基础题库查询功能
 
 ## 星火大模型 X1 API 集成说明
 
 ### 集成位置和方式
 
-星火大模型 X1 API (`spark_x1_final.js`) 作为题库 API 的扩展模块集成，主要用于提供 AI 辅助分析和对话功能。集成方式如下：
+大模型  API (`spark_x1_final.js`) 作为题库 API 的扩展模块集成，主要用于提供 AI 辅助分析和对话功能。集成方式如下：
 
 1. 将 `spark_x1_final.js` 作为模块导入到主题库 API 系统中
 2. 创建新的 API 端点 `/ai/analyze` 和 `/ai/chat` 用于处理 AI 相关请求
